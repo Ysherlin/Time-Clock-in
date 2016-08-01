@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username  :"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="82dp"
+            android:textSize="25dp"
+            android:id="@+id/textView1"
+            android:layout_alignEnd="@+id/textView5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUserName"
+            android:hint="Enter Username"
+            android:layout_gravity="right"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password  :"
+            android:textSize="25dp"
+            android:id="@+id/textView2"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/etUserName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail         :"
+            android:textSize="25dp"
+            android:id="@+id/textView3"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/etEmail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name :"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name :"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/textView4"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPassword"
+            android:hint="Enter Password"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textView1"
+            android:layout_alignEnd="@+id/etUserName"
+            android:layout_toEndOf="@+id/textView3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etEmail"
+            android:hint="Enter Email Address"
+            android:layout_gravity="right"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="15dp"
+            android:layout_alignEnd="@+id/etUserName"
+            android:layout_toEndOf="@+id/textView4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etFName"
+            android:hint="Enter First Name"
+            android:layout_gravity="right"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignEnd="@+id/etUserName"
+            android:layout_toEndOf="@+id/textView4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLName"
+            android:hint="Enter Last Name"
+            android:layout_gravity="right"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="15dp"
+            android:layout_alignEnd="@+id/etUserName"
+            android:layout_toEndOf="@+id/textView4" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="200dp"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</ScrollView>
