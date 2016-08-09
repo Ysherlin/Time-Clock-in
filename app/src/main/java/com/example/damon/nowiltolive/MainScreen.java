@@ -3,7 +3,9 @@ package com.example.damon.nowiltolive;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,8 +44,7 @@ public class MainScreen extends Fragment implements View.OnClickListener
     {
         if (v.getId()==R.id.btnScan)
         {
-            //Error is here- How to call activity from fragment
-            IntentIntegrator ScanIntegrator = new IntentIntegrator(this);
+            IntentIntegrator ScanIntegrator = new IntentIntegrator(getActivity());
             ScanIntegrator.initiateScan();
         }
     }
